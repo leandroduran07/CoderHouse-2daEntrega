@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  grey;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.header{
+    grid-area: header;
+    background-color: rgb(205, 249, 255);
+    display: flex;  
+    
+}
+
+
+.contenido1{
+    grid-area: contenido1;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.contenido2{
+    grid-area: contenido2;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.footer{
+    color: gray;
+    grid-area: footer;
+    margin-bottom: 0;
+    margin-top: 3em;
+    background-color: rgb(205, 249, 255);
+}
+.contenido2-1{
+    grid-area: contenido2-1;
+}
+.contenido2-2{
+    grid-area: contenido2-2;
+}
+
+.grilla{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "contenido1"
+    "contenido2"
+    "footer";
+}
+
+.imginicio{
+    width: 300px;
+    height: 250px;
+    margin-top: 1.em;
+    margin-bottom: 1.5em;
+}
+a:hover{
+    transform: scale(1.1);
+}
+a{
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.iconig{
+    width: 64px;
+    height: 64px;
+    transition-property: all;
+    transition-duration: 2.2s;
+}
+.iconig:hover{
+    transform: scale(1.5) rotate(360deg);
+}
+
+.imgavatar{
+    width: 216px;
+    height: 216px;
+}
+.gridform{
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 0.5em;
+    
+    
+}
+
+
+.contenidoContacto{
+    grid-area: contenidoContacto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.grillaContacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "contenidoContacto"
+    "footer";
+    
+}
+.imgrecetas{
+    width: 300px;
+    height: 250px;
+}
+.imgrecetasexp{
+    width: 300px;
+    height: 250px;
+}
+ul li{
+    list-style-type: none;
+}
+.h2recetas{
+    font-size: x-large;
+    font-style: italic;
+    padding: 1em;
+}
+
+
+
+.recetasTitulo{
+    grid-area: recetasTitulo;
+}
+.recetasPart1{
+    grid-area: recetasPart1;
+    gap: 2em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.recetasPart2{
+    grid-area: recetasPart2;
+    gap: 2em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.recetasPart3{
+    grid-area: recetasPart3;
+    gap: 2em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.recetasPart4{
+    grid-area: recetasPart4;
+    gap: 2em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.recetasPart5{
+    grid-area: recetasPart5;
+}
+
+.grillaRecetas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "recetasTitulo"
+    "recetasPart1"
+    "recetasPart2"
+    "recetasPart3"
+    "recetasPart4"
+    "recetasPart5"
+    "footer";
+    text-align: center;
+    gap: 3em;
+}
+.imgExp{
+    width: 300px;
+    height: 250px;
+    margin: 1em;
+    border: 1px groove rgb(205, 249, 255); ;
+}
+.recetasExp1{
+    grid-area: recetasExp1;
+    gap: 2em;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.recetasExp2{
+    grid-area: recetasExp2;
+    gap: 2em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.recetasExp3{
+    grid-area: recetasExp3;
+    gap: 2em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.recetasExp4{
+    grid-area: recetasExp4;
+}
+.pExpress{
+    text-align: justify;
+    margin: 2em;
+}
+.grillaRecetasExp{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "recetasExp1"
+    "recetasExp2"
+    "recetasExp3"
+    "recetasExp4"
+    "footer";
+    align-items: center;
+}
+.enviar{
+    border-radius: 15%;
+    background-color: rgb(205, 249, 255);
+    color: black;
+    font-weight: bolder;
+    padding: 5px 10px 5px 10px;
+}
+
+@media(min-width:500px){
+    .imginicio{
+        width: 450px;
+        height: 400px;
+    }
+
+    .header{
+        height: 50px;
+    }
+    .footer{
+        height: 150px;
+    }
+
+    .imgrecetas{
+        width: 450px;
+        height: 400px;
+    }
+    .imgrecetasexp{
+        width: 450px;
+        height: 350px;
+    }
+    .imgExp{
+        width: 400px;
+        height: 350px;
+        margin: 1em;
+        border: 1px groove rgb(205, 249, 255); ;
+    }
+
+}
+
+@media(min-width: 768px){
+    .contenido1{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .contenido2{
+        display: grid;
+        grid-template-columns: 1 fr 1fr;
+        grid-template-areas: "contenido2-1 contenido2-2";
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .imginicio{
+        width: 750px;
+        height: 700px;
+    }
+
+    .grilla{
+        gap: 2em;
+        
+    }
+    .header{
+        height: 50px;
+    }
+    .footer{
+        height: 180px;
+    }
+
+    .grillaRecetas{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "recetasTitulo recetasTitulo"
+        "recetasPart1 recetasPart2"
+        "recetasPart3 recetasPart4"
+        "recetasPart5 recetasPart5"
+        "footer footer";
+    }
+    .imgrecetas{
+        width: 600px;
+        height: 550px;
+    }
+    .imgrecetasexp{
+        width: 700px;
+        height: 500px;
+    }
+
+    .recetasPart1{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .recetasPart2{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .recetasPart3{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .recetasPart4{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .recetasPart5{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .grillaRecetasExp{
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas: 
+        "header header"
+        "recetasExp1 recetasExp1"
+        "recetasExp2 recetasExp3"
+        "recetasExp4 recetasExp4"
+        "footer footer";
+    }
+    .recetasExp1{
+        padding-left: 5em;
+        padding-right: 5em; 
+    }
+    .recetasExp2{
+        padding-left: 5em;
+        padding-right: 5em; 
+    }
+    .recetasExp3{
+        padding-left: 5em;
+        padding-right: 5em; 
+    }
+    .recetasExp4{
+        padding-left: 5em;
+        padding-right: 5em; 
+    }
+}    
+
+
