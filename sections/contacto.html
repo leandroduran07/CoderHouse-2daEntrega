@@ -14,9 +14,7 @@
 </head>
 
 <body>
-    <div class="grillaContacto"data-aos="fade-down"
-    data-aos-easing="linear"
-    data-aos-duration="1000">
+    <div class="grillaContacto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
         <header class="header">
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
@@ -25,8 +23,8 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style= "background-color: rgb(205, 249, 255)">
+                        <ul class="navbar-nav me-auto mb-0 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                             </li>
@@ -34,21 +32,21 @@
                                 <a class="nav-link" href="./contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" href="#" role="button"      data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Mi Libro
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu" style= "background-color: rgb(205, 249, 255)">
                                     <li><a class="dropdown-item" href="./recetas.html">Recetas</a></li>
                                     <li><a class="dropdown-item" href="./recetas-express.html"> Recetas
-                                            Express</a>
-                                    </li>
-
+                                            Express</a></li>
+                                    <li><a class="dropdown-item" href="./postres.html">Postres</a></li>
+    
                                 </ul>
                             </li>
-
+    
                         </ul>
-
+    
                     </div>
                 </div>
             </nav>
@@ -61,59 +59,70 @@
                 </h1>
                 <hr>
             </div>
-            <form action="">
-                <fieldset class="gridform">
-                    <legend class="legend">Completa el formulario</legend>
-                    <div class="textoForm">
-                        <label for="name">Nombre</label>
-                    </div>
-                    <div class="inputForm">
-                        <input type="text" name="name" id="name">
-                    </div>
-                    
-                    <div class="textoForm">
-                        <label for="apellido">Apellido</label>
-                    </div>
-                    <div class="inputForm">
-                        <input type="text" name="apellido" id="apellido">
-                    </div>
-                    
-                    <div class="textoForm">
-                        <label for="pais">Nacionalidad</label>
-                    </div>
-                    <div class="inputForm">
-                        <select name="pais" id="pais">
-                            <option value="arg">Argentina</option>
-                            <option value="peru">Perú</option>
-                            <option value="col">Colombia</option>
-                        </select>
-                    </div>
-                    
-                    <div class="textoForm">
-                        <label for="fecha">Fecha de Nacimiento</label>
-                    </div>
-                    <div class="inputForm">
-                        <input type="date" name="fecha" id="fecha">
-                    </div>
-                    
-                    <div class="textoForm">
-                        <label for="email">Correo Electrónico</label>
-                    </div>
-                    <div class="inputForm">
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div>
-                        <input class="enviar" type="submit" value="Enviar">
-                    </div>
-    
-    
-                </fieldset>
-            </form>
-    
-        </main>
-        
 
-        
+            <div class="form1 row g-2 justify-content-center">
+
+
+                <div class="col-md-4 shadow p-1">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col-md-4 shadow p-1">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                </div>
+            
+            </div>
+
+            <div class="form1 row g-2 justify-content-center">
+
+
+                <div class="col-md-4 shadow p-1">
+                    <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono">
+                </div>
+                <div class="col-md-4 shadow p-1">
+                    <input type="text" class="form-control" placeholder="Ciudad" aria-label="Ciudad">
+                </div>
+            
+            </div>
+
+            <div class="form2 row g-2 justify-content-center">
+                <div class="col-md-4 shadow p-1">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com"
+                            value="Email">
+                        <label for="floatingInputGrid">Dirección Email</label>
+                    </div>
+                </div>
+                <div class="col-md-4 shadow p-1">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid">
+                            <option selected>Nacionalidad</option>
+                            <option value="1">Argentina</option>
+                            <option value="2">Perú</option>
+                            <option value="3">Colombia</option>
+                            <option value="4">Chile</option>
+                            <option value="5">Paraguay</option>
+                            <option value="6">Bolivia</option>
+                            <option value="7">Venezuela</option>
+                        </select>
+                        <label for="floatingSelectGrid">Elije una Opción</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="btnEnviar">
+                <button type="button" class="btn btn-outline-info">Enviar</button>
+            </div>
+
+            <div>
+                <img class="imginicio opacity-75" src="../img/pngwing.com.png" alt="logo">
+
+            </div>
+
+        </main>
+
+
+
 
 
     </div>
@@ -125,14 +134,15 @@
         AOS.init();
     </script>
     <footer class="footer">
-                <section>
-                    <div>
-                        <h2>Seguime</h2>
-                        <a href="https://www.instagram.com/gloriatonin/" target="_blank"><img class="iconig" src="../img/instagram64.svg" alt="icon"></a>
-                    </div>
-                    
-                </section>
-            </footer>
-    </body>
+        <section>
+            <div>
+                <h2>Seguime</h2>
+                <a href="https://www.instagram.com/gloriatonin/" target="_blank"><img class="iconig"
+                        src="../img/instagram64.svg" alt="icon"></a>
+            </div>
+
+        </section>
+    </footer>
+</body>
 
 </html>

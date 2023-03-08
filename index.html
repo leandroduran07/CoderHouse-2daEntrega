@@ -14,9 +14,7 @@
 </head>
 
 <body>
-    <div class="grilla" data-aos="fade-down"
-    data-aos-easing="linear"
-    data-aos-duration="1000">
+    <div class="grilla" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
         <header class="header">
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
@@ -25,8 +23,8 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style= "background-color: rgb(205, 249, 255)">
+                        <ul class="navbar-nav me-auto mb-0 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                             </li>
@@ -38,17 +36,17 @@
                                     aria-expanded="false">
                                     Mi Libro
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu" style= "background-color: rgb(205, 249, 255)">
                                     <li><a class="dropdown-item" href="./sections/recetas.html">Recetas</a></li>
                                     <li><a class="dropdown-item" href="./sections/recetas-express.html"> Recetas
-                                            Express</a>
-                                    </li>
-
+                                            Express</a></li>
+                                    <li><a class="dropdown-item" href="./sections/postres.html">Postres</a></li>
+    
                                 </ul>
                             </li>
-
+    
                         </ul>
-
+    
                     </div>
                 </div>
             </nav>
@@ -82,7 +80,37 @@
                 </p>
             </div>
             <div class="contenido2-2">
-                <img class="imgavatar" src="./img/avatar.webp" alt="avatar">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/brownies.webp" class="d-block w-100 imgcarousel" alt="brownies">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/fotoRecetas.jpg" class="d-block w-100 imgcarousel" alt="pastas">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/fotoExpress.jpeg" class="d-block w-100 imgcarousel" alt="rollitosjyq">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -100,9 +128,10 @@
             <section>
                 <div>
                     <h2 class="h2footer">Seguime</h2>
-                    <a href="https://www.instagram.com/gloriatonin/" target="_blank"><img class="iconig" src="./img/instagram64.svg" alt="icon"></a>
+                    <a href="https://www.instagram.com/gloriatonin/" target="_blank"><img class="iconig"
+                            src="./img/instagram64.svg" alt="icon"></a>
                 </div>
-                
+
             </section>
         </footer>
     </div>
