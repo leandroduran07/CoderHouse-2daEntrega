@@ -1,0 +1,238 @@
+@media(min-width:500px) {
+    .imginicio {
+        width: 450px;
+        height: 400px;
+    }
+
+    .header {
+        height: 50px;
+    }
+
+    .footer {
+        height: 150px;
+    }
+
+    .imgrecetas {
+        width: 450px;
+        height: 400px;
+    }
+
+    .imgrecetasexp {
+        width: 450px;
+        height: 350px;
+    }
+    .imgpostres{
+        width: 450px;
+        height: 350px;
+    }
+
+    .imgExp {
+        width: 400px;
+        height: 350px;
+        margin: 1em;
+        border: 1px groove rgb(205, 249, 255);
+        ;
+    }
+
+	.imgcarousel{
+		width: 400px;
+        height: 350px;
+	}
+    .postres4{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+}
+
+@media(min-width: 768px) {
+    .contenido1 {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .contenido2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "contenido2-1 contenido2-2";
+        padding-left: 5em;
+        padding-right: 5em;
+		gap: 3em;
+    }
+	.contenido2-2{
+		justify-content: center;
+	}
+	.contenido2-1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+    .imginicio {
+        width: 750px;
+        height: 700px;
+    }
+	.imgcarousel{
+		width: 750px;
+        height: 600px;
+	}
+
+    .grilla {
+        gap: 5em;
+
+    }
+
+    .header {
+        height: 50px;
+    }
+
+    .footer {
+        height: 150px;
+    }
+
+    .grillaRecetas {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "recetasTitulo recetasTitulo"
+            "recetasPart1 recetasPart2"
+            "recetasPart3 recetasPart4"
+            "recetasPart5 recetasPart5"
+            "footer footer";
+    }
+
+    .imgrecetas {
+        width: 600px;
+        height: 550px;
+    }
+
+    .imgrecetasexp {
+        width: 700px;
+        height: 500px;
+    }
+    .imgpostres{
+        width: 700px;
+        height: 550px;
+    }
+
+    .recetasPart1 {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .recetasPart2 {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .recetasPart3 {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .recetasPart4 {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .recetasPart5 {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .grillaRecetasExp {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "recetasExp1 recetasExp1"
+            "recetasExp2 recetasExp3"
+            "recetasExp4 recetasExp4"
+            "footer footer";
+    }
+
+    .recetasExp1 {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .recetasExp2 {
+        padding-left: 5em;
+        padding-right: 5em;
+        height: 236px;
+    }
+
+    .recetasExp3 {
+        padding-left: 5em;
+        padding-right: 5em;
+        height: 236px;
+    }
+
+    .recetasExp4 {
+        padding-left: 5em;
+        padding-right: 5em;
+        margin-top: 12em;
+    }
+
+    .grillaPostres{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "header header"
+        "postres1 postres1"
+        "postres2 postres3"
+        "postres4 postres4"
+        "footer footer";
+        gap: 2em;
+    }
+    .postres1{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .postres2{
+        padding-left: 5em;
+        padding-right: 5em;
+        gap: 2em;
+    }
+    .postres2Lista{
+        gap: 2em;
+    }
+    .postres3{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .postres4{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+}
+
+@media(min-width: 1000px) {
+    .recetasExp4 {
+        margin-top: 5em;
+    }
+    .imgpostres{
+        width: 900px;
+        height: 700px;
+    }
+    
+    .postres4{
+        padding-left: 8em;
+        padding-right: 8em;
+        margin-top: 3em;
+        margin-bottom: 2em;
+        
+    }
+    .imgrecetasexp{
+        width: 900px;
+        height: 700px;
+    }
+    .imgrecetas{
+        width: 900px;
+        height: 700px;
+    }
+}

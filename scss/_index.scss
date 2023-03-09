@@ -1,0 +1,33 @@
+.contenido1{
+    grid-area: contenido1;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.contenido2{
+    grid-area: contenido2;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
+
+.contenido2-1{
+    grid-area: contenido2-1;
+}
+
+.contenido2-2{
+    grid-area: contenido2-2;
+}
+
+.grilla{
+    display: grid;
+    gap: 3em;
+    grid-template-areas:
+        "header"
+        "contenido1"
+        "contenido2"
+        "footer";
+}

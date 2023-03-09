@@ -1,0 +1,56 @@
+.recetasExp1 {
+    grid-area: recetasExp1;
+    gap: 2em;
+
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.recetasExp2 {
+    grid-area: recetasExp2;
+    gap: 2em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.recetasExp3 {
+    grid-area: recetasExp3;
+    gap: 2em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.recetasExp4 {
+    grid-area: recetasExp4;
+}
+
+.pExpress {
+    text-align: justify;
+    margin: 2em;
+}
+
+.grillaRecetasExp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "recetasExp1"
+        "recetasExp2"
+        "recetasExp3"
+        "recetasExp4"
+        "footer";
+    align-items: center;
+}
+.imgrecetasexp {
+    width: 300px;
+    height: 250px;
+}
+.imgExp {
+    width: 300px;
+    height: 250px;
+    margin: 1em;
+    border: 1px groove rgb(205, 249, 255);
+    ;
+}

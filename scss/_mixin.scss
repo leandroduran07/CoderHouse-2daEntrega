@@ -1,0 +1,22 @@
+@mixin propiedadesBody{
+    background-color: $colorBody;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: $colorFont;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin propiedadesFooter{
+    color: gray;
+    grid-area: footer;
+    margin-bottom: 0;
+    margin-top: 2em;
+    background-color: rgb(205, 249, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+}

@@ -1,0 +1,34 @@
+.postres1{
+    grid-area: postres1;
+    text-align: justify;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.postres2{
+    grid-area: postres2;
+    gap: 2em;
+    text-align: left;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.postres3{
+    grid-area: postres3;
+    gap: 2em;
+    text-align: justify;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.postres4{
+    grid-area: postres4;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.imgpostres{
+    width: 300px;
+    height: 250px;
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    @include propiedadesBody;
+
+}
+
+
+
+.imginicio {
+    width: 300px;
+    height: 250px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.imgcarousel{
+	width: 300px;
+    height: 250px;
+}
+
+ul li {
+    list-style-type: none;
+}

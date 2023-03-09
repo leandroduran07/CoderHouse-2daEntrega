@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: grey;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.imginicio {
+  width: 300px;
+  height: 250px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.imgcarousel {
+  width: 300px;
+  height: 250px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(205, 249, 255);
+}
+
+.dropdown-item {
+  text-align: center;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+a {
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.footer {
+  color: gray;
+  grid-area: footer;
+  margin-bottom: 0;
+  margin-top: 2em;
+  background-color: rgb(205, 249, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+}
+
+.iconig {
+  width: 64px;
+  height: 64px;
+  transition-property: all;
+  transition-duration: 2.2s;
+}
+
+.iconig:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+
+.contenido1 {
+  grid-area: contenido1;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.contenido2 {
+  grid-area: contenido2;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.contenido2-1 {
+  grid-area: contenido2-1;
+}
+
+.contenido2-2 {
+  grid-area: contenido2-2;
+}
+
+.grilla {
+  display: grid;
+  gap: 3em;
+  grid-template-areas: "header" "contenido1" "contenido2" "footer";
+}
+
+.contenidoContacto {
+  grid-area: contenidoContacto;
+  padding-left: 1em;
+  padding-right: 1em;
+  gap: 3em;
+  padding-top: 2em;
+}
+
+.grillaContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "contenidoContacto" "footer";
+}
+
+.form1 {
+  padding-top: 3em;
+  gap: 1em;
+}
+
+.form2 {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  gap: 1em;
+}
+
+.btnEnviar {
+  padding: 0 2em 2em 2em;
+}
+
+.recetasTitulo {
+  grid-area: recetasTitulo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.recetasPart1 {
+  grid-area: recetasPart1;
+  gap: 2em;
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.recetasPart2 {
+  grid-area: recetasPart2;
+  gap: 2em;
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.recetasPart3 {
+  grid-area: recetasPart3;
+  gap: 2em;
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.recetasPart4 {
+  grid-area: recetasPart4;
+  gap: 2em;
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.recetasPart5 {
+  grid-area: recetasPart5;
+}
+
+.grillaRecetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "recetasTitulo" "recetasPart1" "recetasPart2" "recetasPart3" "recetasPart4" "recetasPart5" "footer";
+  text-align: center;
+  gap: 3em;
+}
+
+.imgrecetas {
+  width: 300px;
+  height: 250px;
+}
+
+.h2recetas {
+  font-size: x-large;
+  font-style: italic;
+  padding: 1em;
+}
+
+.recetasExp1 {
+  grid-area: recetasExp1;
+  gap: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.recetasExp2 {
+  grid-area: recetasExp2;
+  gap: 2em;
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.recetasExp3 {
+  grid-area: recetasExp3;
+  gap: 2em;
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.recetasExp4 {
+  grid-area: recetasExp4;
+}
+
+.pExpress {
+  text-align: justify;
+  margin: 2em;
+}
+
+.grillaRecetasExp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "recetasExp1" "recetasExp2" "recetasExp3" "recetasExp4" "footer";
+  align-items: center;
+}
+
+.imgrecetasexp {
+  width: 300px;
+  height: 250px;
+}
+
+.imgExp {
+  width: 300px;
+  height: 250px;
+  margin: 1em;
+  border: 1px groove rgb(205, 249, 255);
+}
+
+.postres1 {
+  grid-area: postres1;
+  text-align: justify;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.postres2 {
+  grid-area: postres2;
+  gap: 2em;
+  text-align: left;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.postres3 {
+  grid-area: postres3;
+  gap: 2em;
+  text-align: justify;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.postres4 {
+  grid-area: postres4;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.imgpostres {
+  width: 300px;
+  height: 250px;
+}
+
+@media (min-width: 500px) {
+  .imginicio {
+    width: 450px;
+    height: 400px;
+  }
+  .header {
+    height: 50px;
+  }
+  .footer {
+    height: 150px;
+  }
+  .imgrecetas {
+    width: 450px;
+    height: 400px;
+  }
+  .imgrecetasexp {
+    width: 450px;
+    height: 350px;
+  }
+  .imgpostres {
+    width: 450px;
+    height: 350px;
+  }
+  .imgExp {
+    width: 400px;
+    height: 350px;
+    margin: 1em;
+    border: 1px groove rgb(205, 249, 255);
+  }
+  .imgcarousel {
+    width: 400px;
+    height: 350px;
+  }
+  .postres4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 768px) {
+  .contenido1 {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .contenido2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contenido2-1 contenido2-2";
+    padding-left: 5em;
+    padding-right: 5em;
+    gap: 3em;
+  }
+  .contenido2-2 {
+    justify-content: center;
+  }
+  .contenido2-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .imginicio {
+    width: 750px;
+    height: 700px;
+  }
+  .imgcarousel {
+    width: 750px;
+    height: 600px;
+  }
+  .grilla {
+    gap: 5em;
+  }
+  .header {
+    height: 50px;
+  }
+  .footer {
+    height: 150px;
+  }
+  .grillaRecetas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "recetasTitulo recetasTitulo" "recetasPart1 recetasPart2" "recetasPart3 recetasPart4" "recetasPart5 recetasPart5" "footer footer";
+  }
+  .imgrecetas {
+    width: 600px;
+    height: 550px;
+  }
+  .imgrecetasexp {
+    width: 700px;
+    height: 500px;
+  }
+  .imgpostres {
+    width: 700px;
+    height: 550px;
+  }
+  .recetasPart1 {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .recetasPart2 {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .recetasPart3 {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .recetasPart4 {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .recetasPart5 {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .grillaRecetasExp {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "recetasExp1 recetasExp1" "recetasExp2 recetasExp3" "recetasExp4 recetasExp4" "footer footer";
+  }
+  .recetasExp1 {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .recetasExp2 {
+    padding-left: 5em;
+    padding-right: 5em;
+    height: 236px;
+  }
+  .recetasExp3 {
+    padding-left: 5em;
+    padding-right: 5em;
+    height: 236px;
+  }
+  .recetasExp4 {
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 12em;
+  }
+  .grillaPostres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "postres1 postres1" "postres2 postres3" "postres4 postres4" "footer footer";
+    gap: 2em;
+  }
+  .postres1 {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .postres2 {
+    padding-left: 5em;
+    padding-right: 5em;
+    gap: 2em;
+  }
+  .postres2Lista {
+    gap: 2em;
+  }
+  .postres3 {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+  .postres4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 1000px) {
+  .recetasExp4 {
+    margin-top: 5em;
+  }
+  .imgpostres {
+    width: 900px;
+    height: 700px;
+  }
+  .postres4 {
+    padding-left: 8em;
+    padding-right: 8em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+  .imgrecetasexp {
+    width: 900px;
+    height: 700px;
+  }
+  .imgrecetas {
+    width: 900px;
+    height: 700px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

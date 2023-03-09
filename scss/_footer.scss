@@ -1,0 +1,14 @@
+.footer {
+    @include propiedadesFooter;
+}
+
+.iconig {
+    width: 64px;
+    height: 64px;
+    transition-property: all;
+    transition-duration: 2.2s;
+}
+
+.iconig:hover {
+    transform: scale(1.5) rotate(360deg);
+}
